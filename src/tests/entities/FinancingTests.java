@@ -29,7 +29,7 @@ public class FinancingTests {
 		int months = 20;
 		
 		Assertions.assertThrows(IllegalArgumentException.class, () -> {
-			Financing financing = new Financing(totalAmount, income, months);
+			new Financing(totalAmount, income, months);
 		});
 	}
 	
