@@ -15,6 +15,10 @@ public class FinancingTests {
 		
 		Assertions.assertDoesNotThrow(() -> {
 			Financing financing = new Financing(totalAmount, income, months);
+			
+			Assertions.assertEquals(totalAmount, financing.getTotalAmount());
+			Assertions.assertEquals(income, financing.getIncome());
+			Assertions.assertEquals(months, financing.getMonths());
 		});
 	}
 	
